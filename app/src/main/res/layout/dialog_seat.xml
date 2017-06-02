@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/dialog_toolbar_seat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/cancel"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:id="@+id/tv_dialog_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:gravity="right|end"
+            android:text="@string/submit"
+            android:textSize="14sp" />
+    </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_event_seat_white_18dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:text="Seat"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dialog_tv_seat_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <include layout="@layout/item_divider" />
+
+            <RadioGroup
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/broder_layout"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/me" />
+
+                <RadioButton
+                    android:id="@+id/rd_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/other" />
+            </RadioGroup>
+
+            <include layout="@layout/item_divider" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dialog_input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <EditText
+                    android:id="@+id/dialog_edt_name_of_passenger"
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:drawableRight="@drawable/ic_perm_identity_black_18dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="@string/please_input_name"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+<include layout="@layout/item_divider"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dialog_input_layout_tel"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <EditText
+                    android:id="@+id/dialog_edt_tel_of_passenger"
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:drawableRight="@drawable/ic_phone_black_18dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="@string/please_input_tel"
+                    android:inputType="phone"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+            <include layout="@layout/item_divider"/>
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/pickup_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:id="@+id/spn_boarding"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </Spinner>
+            </LinearLayout>
+<include layout="@layout/item_divider"/>
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/takeoff_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:id="@+id/spn_dropping"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

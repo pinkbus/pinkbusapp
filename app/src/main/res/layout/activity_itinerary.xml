@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TabLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:background="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        />
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:drawableTint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_location_on_black_18dp"
+                android:id="@+id/tv_station1"
+                android:layout_width="wrap_content"
+                android:text="Station 1"
+
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:drawableTint="#1A237E"
+                android:textColor="#5C6BC0"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_location_on_black_18dp"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tv_station2"
+                android:text="Station 2"/>
+        </TableRow>
+    </LinearLayout>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:drawableBottom="@drawable/ic_done_white_18dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

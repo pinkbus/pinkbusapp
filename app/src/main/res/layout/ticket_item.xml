@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Primary Information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic|bold"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="340dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp">
+        <EditText
+            android:drawableTint="@color/colorPrimary"
+            android:drawableEnd="@drawable/ic_perm_identity_black_18dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_name" />
+
+        <EditText
+            android:drawableTint="@color/colorPrimary"
+            android:drawableEnd="@drawable/ic_phone_black_18dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/input_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Tel" />
+
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Ticket Information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic|bold"/>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tk_company_name"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableEnd="@drawable/ic_business_black_18dp"
+            android:hint="Company Name"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/tk_ticketid"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableEnd="@drawable/ic_card_travel_white_24dp"
+            android:hint="Ticket ID"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/tk_seat_id"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableEnd="@drawable/ic_event_seat_black_18dp"
+            android:hint="Seat ID"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/tk_boarding"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableEnd="@drawable/ic_location_city_black_18dp"
+            android:hint="Boarding"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/tk_dropping"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableEnd="@drawable/ic_location_city_black_18dp"
+            android:hint="Dropping"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/tk_dpt_date"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableEnd="@drawable/ic_date_range_black_18dp"
+            android:hint="Departure Date"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+</LinearLayout>

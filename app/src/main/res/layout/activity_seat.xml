@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_seat"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_height="20dp"
+            android:layout_width="330dp">
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_shopping_cart_white_12dp"
+                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:text="@string/count_seat"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/tv_count_seat"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:text="0"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_height="20dp"
+            android:layout_width="330dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_local_atm_white_18dp"
+                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:text="@string/total_amount"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/tv_count_total"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:text="0"/>
+        </TableRow>
+    </LinearLayout>
+    <ScrollView
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:layout_width="280dp"
+                android:layout_height="70dp">
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="1"
+                    android:id="@+id/btn_seat1"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="2"
+                    android:id="@+id/btn_seat2"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="3"
+                    android:id="@+id/btn_seat3"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="4"
+                    android:id="@+id/btn_seat4"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:layout_width="280dp"
+                android:layout_height="70dp">
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="5"
+                    android:id="@+id/btn_seat5"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="6"
+                    android:id="@+id/btn_seat6"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="7"
+                    android:id="@+id/btn_seat7"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="8"
+                    android:id="@+id/btn_seat8"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:layout_width="280dp"
+                android:layout_height="70dp">
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="9"
+                    android:id="@+id/btn_seat9"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="10"
+                    android:id="@+id/btn_seat10"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="11"
+                    android:id="@+id/btn_seat11"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="12"
+                    android:id="@+id/btn_seat12"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:layout_width="280dp"
+                android:layout_height="70dp">
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="13"
+                    android:id="@+id/btn_seat13"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="14"
+                    android:id="@+id/btn_seat14"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="15"
+                    android:id="@+id/btn_seat15"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="16"
+                    android:id="@+id/btn_seat16"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="280dp"
+                android:layout_height="70dp">
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="17"
+                    android:id="@+id/btn_seat17"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="18"
+                    android:id="@+id/btn_seat18"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="19"
+                    android:id="@+id/btn_seat19"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+
+                <Button
+                    android:background="@drawable/available_seat"
+                    android:text="20"
+                    android:id="@+id/btn_seat20"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_event_seat_black_24dp" />
+            </TableRow>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <ImageButton
+        android:src="@drawable/ic_done_white_18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_circle"
+        android:layout_marginLeft="160dp"
+        android:id="@+id/btn_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    </LinearLayout>

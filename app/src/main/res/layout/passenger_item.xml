@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/color1"
+        android:id="@+id/tv_company_name"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:drawableLeft="@drawable/ic_directions_bus_white_24dp"
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="COMPANY NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/line"
+        android:layout_width="300dp"
+        android:layout_height="5dp">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:textColor="@color/color1"
+            android:id="@+id/tv_from"
+            android:drawableTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_location_city_black_18dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="From"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/color1"
+            android:id="@+id/tv_to"
+            android:drawableTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_location_city_black_18dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="To"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/color1"
+            android:id="@+id/tv_date"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_date_range_black_18dp"
+            android:drawableTint="@color/colorPrimary"
+            android:text="Date"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@color/color1"
+            android:id="@+id/tv_time"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_access_time_white_18dp"
+            android:drawableTint="@color/colorPrimary"
+            android:text="Time"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/line"
+        android:layout_width="300dp"
+        android:layout_height="5dp">
+    </LinearLayout>
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="30dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:drawableTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_perm_identity_black_18dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="@string/ticket_id" />
+        <TextView
+            android:id="@+id/tv_ticket_id"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="10" />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="30dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:drawableTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_perm_identity_black_18dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="@string/hint_name" />
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_p_name"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="Your Name" />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="30dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:drawableTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_phone_black_18dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="@string/hint_tel" />
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_p_tel"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="Your Tel" />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="30dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:drawableTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_event_seat_white_18dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="@string/seat" />
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_p_seat_id"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="Your Seat No" />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="30dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:drawableTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_location_on_black_18dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="@string/boarding" />
+    </TableRow>
+    <TableRow
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="30dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_p_boarding_local"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="Boarding Local" />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="30dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:drawableTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_location_on_black_18dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="@string/dropping" />
+
+    </TableRow>
+    <TableRow
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="30dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/tv_p_dropping_local"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:text="Dropping Local"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="30dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:drawableTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_local_atm_white_18dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="@string/price" />
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_p_price"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:text="Your Price" />
+    </TableRow>
+</LinearLayout>

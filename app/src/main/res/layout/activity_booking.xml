@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_order_id"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/broder_layout"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:layout_width="340dp"
+        android:layout_height="190dp">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <EditText
+                android:drawableEnd="@drawable/ic_perm_identity_black_18dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="textPersonName"
+                android:hint="@string/hint_name" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <EditText
+                android:drawableEnd="@drawable/ic_email_black_18dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/hint_email" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_tel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <EditText
+                android:drawableEnd="@drawable/ic_phone_black_18dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/input_tel"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="phone"
+                android:hint="@string/hint_tel" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_passenger"
+        android:layout_width="340dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/broder_layout"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="1.5dp">
+
+    </ListView>
+    <ImageButton
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_circle"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_booking"
+        android:layout_width="50dp"
+        android:layout_height="50dp" >
+        </ImageButton>
+</LinearLayout>
+</ScrollView>

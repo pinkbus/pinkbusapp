@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/app_bar_main2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/find_from_city"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/departure_station"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/edt_from_city"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:clickable="false"
+            android:drawableLeft="@drawable/ic_flight_land_black_18dp"
+            android:drawableTint="@color/colorPrimary"
+            android:enabled="false"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <include layout="@layout/item_divider"/>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/find_to_city"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/arrival_station"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="18sp"
+            android:drawableTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_flight_land_black_18dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:clickable="false"
+            android:id="@+id/edt_to_city"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <include layout="@layout/item_divider"/>
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:id="@+id/pk_date"
+        android:background="#FFFFFF"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_date_range_black_18dp"
+            android:textColor="@color/colorPrimary"
+            android:enabled="false"
+            android:textSize="16sp"
+            android:text="Journey Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TableRow
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true">
+           <TextView
+               android:gravity="center_horizontal"
+               android:text="02"
+               android:enabled="false"
+               android:textColor="@color/color1"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="20dp"
+               android:textSize="30sp"
+               android:layout_width="90dp"
+               android:id="@+id/tv_day" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/tv_month"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                android:text="April"
+                android:textColor="@color/color2"
+                android:textSize="30sp" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:textColor="@color/color2"
+                android:text="2017"
+                android:enabled="false"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="30sp"
+                android:id="@+id/tv_year"
+                />
+
+        </TableRow>
+    </RelativeLayout>
+    <Button
+        android:layout_marginTop="240dp"
+        android:drawableTint="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn_search_route"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+</LinearLayout>

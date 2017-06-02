@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_route"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TableRow
+            android:background="#FFFFFF"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/tv_station1"
+                android:layout_width="140dp"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_flight_land_black_18dp"
+                android:drawableTint="#4A148C"
+                android:gravity="center_vertical"
+                android:text="@string/city"
+                android:textColor="#6A1B9A"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_station2"
+                android:layout_width="140dp"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_flight_land_black_18dp"
+                android:drawableTint="#4A148C"
+                android:gravity="center_vertical"
+                android:text="@string/city"
+                android:textColor="#6A1B9A"
+                android:textSize="16sp" />
+        </TableRow>
+        <include layout="@layout/item_divider"/>
+        <TableRow
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:textColor="#6A1B9A"
+                android:drawableTint="#4A148C"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                android:textSize="16sp"
+                android:text="@string/dpt_date"
+                android:id="@+id/tv_date1"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+        <include layout="@layout/item_divider"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/all_route_available"
+        android:textColor="#6A1B9A"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="390dp">
+
+        <ListView
+            android:id="@+id/lvRoute_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false">
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#F06292"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="330dp"
+        android:layout_height="480dp">
+        <android.support.design.widget.TextInputLayout
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/email_address_layout"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_email_black_18dp"
+                android:id="@+id/your_email_address"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/full_name_layout"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_perm_identity_black_18dp"
+                android:id="@+id/your_full_name"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="@string/hint_name"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/telephone_number_layout"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_phone_black_18dp"
+                android:id="@+id/your_telephone_number"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="@string/hint_tel"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/password_layout"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_lock_black_18dp"
+                android:drawableTint="@color/colorPrimary"
+                android:id="@+id/create_new_password"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/confirm_password_layout"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_lock_black_18dp"
+                android:drawableTint="@color/colorPrimary"
+                android:id="@+id/confirm_password"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="@string/confirm_pass"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/sign_up"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_cancer"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/cancel"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

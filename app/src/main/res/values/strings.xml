@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">PinkBus</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_tel">Tel</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Gia tri cua gi do do ke tui tui hieu la duuoc-->
+    <string name="departure_station">From</string>
+    <string name="arrival_station">To</string>
+    <string name="city">City</string>
+    <string name="dpt_date">Departure Date</string>
+
+    <string name="all_route_available">All Route Available</string>
+    <string name="seat">Seat</string>
+    <string name="sleeper">Sleeper</string>
+
+    <string name="me">Me</string>
+    <string name="other">Other</string>
+    <string name="please_input_name">Please Input Your Full Name</string>
+    <string name="please_input_tel">Please Input Your Telephone</string>
+    <string name="pickup_location">Choose Pick Up Location</string>
+    <string name="takeoff_location">Choose Take Off Location</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="do_you_hav_acc_gmail">Do You Have Google Mail Account?</string>
+    <string name="yes">Yes</string>
+    <string name="messages">If you have account of Google Mail, please press \'Sign In\' or \'Sign Up\'.</string>
+    <string name="no">No</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="sign_in_gmail">Sign In With Google Mail</string>
+    <string name="sign_in_fb">Sign In With Facebook</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="count_seat">Count Seat</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="order_id">Order ID</string>
+    <string name="onl">Online Payment</string>
+    <string name="off">Offline Payment</string>
+    <string name="you_have">You have 3 minutes to choose payment</string>
+    <string name="time_out">Time Out</string>
+    <string name="messages_timeout">Your Ticket Was Deleted!</string>
+    <string name="yes_exit">Yes, Exit App</string>
+    <string name="i_wanna_book_one_more">I Want to Book Ticket One More</string>
+    <string name="seconds">Seconds</string>
+    <string name="choice_city">Please Choose City</string>
+    <string name="ticket_id">Ticket ID</string>
+    <string name="boarding">Boarding</string>
+    <string name="dropping">Dropping</string>
+    <string name="price">Price</string>
+    <string name="order_date">Order Date</string>
+    <string name="payment">Payment</string>
+    <string name="status_ticket">Status Ticket</string>
+    <string name="received_date">Received Date</string>
+    <string name="payout">Payout</string>
+    <string name="view_tk_details">View Ticket</string>
+    <string name="search">Search</string>
+    <string name="book_now">Find and Book Now</string>
+</resources>

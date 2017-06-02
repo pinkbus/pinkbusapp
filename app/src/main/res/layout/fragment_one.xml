@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coachstationmanger.victor.pinkbus.fragment.OneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:divider="@color/colorPrimary"
+        android:id="@+id/lv_itinerary"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical">
+
+    </ListView>
+
+</FrameLayout>

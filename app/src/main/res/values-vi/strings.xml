@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PinkBus</string>
+    <string name="arrival_station">Từ</string>
+    <string name="cancel">Hủy Bỏ</string>
+    <string name="city">Thành Phố</string>
+    <string name="confirm_pass">Nhập Lại Mật Khẩu</string>
+    <string name="count_seat">Số Ghế Đã Chọn</string>
+    <string name="departure_station">Đến</string>
+    <string name="do_you_hav_acc_gmail">Bạn Có Tài Khoản Google Mail Không?</string>
+    <string name="dpt_date">Ngày Khởi Hành</string>
+    <string name="email">Địa chỉ Email</string>
+    <string name="hint_email">Thư Điện Tử</string>
+    <string name="hint_name">Họ Tên</string>
+    <string name="hint_tel">Số Điện Thoại</string>
+    <string name="i_wanna_book_one_more">Tôi Muốn Đặt Lại Vé Xe</string>
+    <string name="me">Cho Tôi</string>
+    <string name="messages">Nếu bạn có tài khoản Google Mail, Vui lòng nhấn \'Có\'.</string>
+    <string name="messages_timeout">Vé Của Bạn Đã Bị Xóa!</string>
+    <string name="no">Không</string>
+    <string name="off">Nhận Vé Tại Quầy</string>
+    <string name="onl">Thanh Toán Trực Tuyến</string>
+    <string name="order_id">Mã Đặt Vé</string>
+    <string name="other">Cho Người Khác</string>
+    <string name="password">Mật Khẩu</string>
+    <string name="pickup_location">Điểm Lên Xe</string>
+    <string name="please_input_name">Vui Lòng Nhập Họ Tên</string>
+    <string name="please_input_tel">Vui Lòng Nhập Số Điện Thoại</string>
+    <string name="seat">Ghế</string>
+    <string name="seconds">Giây</string>
+    <string name="section_format"></string>
+    <string name="sign_in">Đăng Nhập</string>
+    <string name="sign_in_fb">Đăng Nhập với Facebook</string>
+    <string name="sign_in_gmail">Đăng Nhập với GMail</string>
+    <string name="sign_up">Đăng Ký</string>
+    <string name="sleeper">Giường Nằm</string>
+    <string name="submit">Xác Nhận</string>
+    <string name="takeoff_location">Điểm Xuống Xe</string>
+    <string name="time_out">Hết Giờ</string>
+    <string name="total_amount">Tiền Tạm Tính</string>
+    <string name="yes">Có</string>
+    <string name="yes_exit">Thoát Khỏi Ứng Dụng</string>
+    <string name="you_have">Bạn có 3 Phút để chọn Phương Thức Thanh Toán</string>
+</resources>

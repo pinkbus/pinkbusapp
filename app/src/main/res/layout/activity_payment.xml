@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_payment"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_order_id"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:text="ORDER ID"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:background="@drawable/broder_layout"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="Your Email"
+            android:textColor="#000000"
+            android:drawableEnd="@drawable/ic_email_black_18dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:id="@+id/input_email"
+            android:layout_width="300dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="Your Price"
+            android:textColor="#000000"
+            android:drawableEnd="@drawable/ic_local_atm_white_18dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:id="@+id/input_price"
+            android:layout_width="300dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:drawableTint="@color/colorPrimary"
+            android:textColor="#000000"
+            android:drawableEnd="@drawable/ic_perm_identity_black_18dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="Your Ticket"
+            android:id="@+id/input_ticket_id"
+            android:layout_width="300dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:drawableTint="@color/colorPrimary"
+            android:textColor="#000000"
+            android:drawableEnd="@drawable/ic_date_range_black_18dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="Your OrderDate"
+            android:id="@+id/input_date_order"
+            android:layout_width="300dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/broder_layout"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd_onl"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Thanh Toan Online" />
+
+        <RadioButton
+            android:id="@+id/rd_off"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="Thanh Toan Offline" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(*)Enter your Discount Code"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:background="@drawable/broder_layout"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="320dp"
+        android:layout_height="55dp">
+
+        <EditText
+            android:textAllCaps="true"
+            android:id="@+id/edt_dis_code"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <Button
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:text="OK"
+            android:background="@color/colorPrimary"
+            android:id="@+id/btn_confirm_dis"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(*)You have 120 seconds to Payout!!"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tv_seconds_count"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+    <ProgressBar
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/pb"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        style="?android:attr/progressBarStyleHorizontal" />
+    <ImageButton
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_done_white_18dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_payout"
+        android:layout_marginTop="10dp"
+        android:layout_width="340dp"
+        android:layout_height="50dp" />
+</LinearLayout>

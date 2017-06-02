@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coachstationmanger.victor.pinkbus.fragment.TwoFragment">
+    <TextView
+        android:drawableTint="#1A237E"
+        android:textColor="#5C6BC0"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_location_on_black_18dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_height="50dp"
+        android:layout_width="280dp"
+        android:id="@+id/tv_itinerary_name"
+        android:text="Your Location" />
+
+</FrameLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_sleeper"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.design.widget.TabLayout
+            android:layout_alignParentTop="true"
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:scrollbars="vertical"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            />
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:layout_height="20dp"
+            android:layout_width="330dp">
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_shopping_cart_white_12dp"
+                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:text="Count Seat"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/tv_total_seat"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:text="0"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_height="20dp"
+            android:layout_width="330dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_local_atm_white_18dp"
+                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:text="Total Price"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="18sp" />
+        </TableRow>
+    </LinearLayout>
+    <ImageButton
+        android:src="@drawable/ic_done_white_18dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_circle"
+        android:layout_marginLeft="160dp"
+        android:id="@+id/btn_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    </LinearLayout>
